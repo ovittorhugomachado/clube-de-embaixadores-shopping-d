@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html {
+    background-image: url('../images/texturafundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: poppins;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+p {
+    font-family: "inter";
+}
+
+button {
+    cursor: pointer;
+    font-family: "inter";
+    font-weight: 500;
+}
+
+.section-hero {
+    background-image: url('/images/texturafundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
