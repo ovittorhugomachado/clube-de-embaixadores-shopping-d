@@ -8,6 +8,14 @@ html {
     background-attachment: fixed;
 }
 
+#cadastro {
+    scroll-behavior: smooth;
+}
+
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: poppins;
     font-weight: 700;
