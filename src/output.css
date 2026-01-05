@@ -290,6 +290,12 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-200 {
+    height: calc(var(--spacing) * 200);
+  }
+  .h-\[800px\] {
+    height: 800px;
+  }
   .h-auto {
     height: auto;
   }
@@ -407,6 +413,10 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
+  }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
   }
   .border-2 {
     border-style: var(--tw-border-style);

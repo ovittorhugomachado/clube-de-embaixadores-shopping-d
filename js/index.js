@@ -69,3 +69,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.getElementById('formCadastro').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const data = new FormData();
+
+  data.append('entry.1996784540', document.getElementById('nome').value);
+  data.append('entry.1577197277', document.getElementById('instagram').value);
+  data.append('entry.561781081', document.getElementById('cpf').value);
+  data.append('entry.1891232097', document.getElementById('telefone').value);
+
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLSd6bNaLUk8-UNMB_NJ4wcvQk2mOzVBuCRHrH-0WefXHEghtWg/formResponse', {
+    method: 'POST',
+    body: data,
+    mode: 'no-cors'
+  });
+
+  alert('Cadastro enviado com sucesso!');
+});
