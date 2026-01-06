@@ -71,20 +71,61 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById('formCadastro').addEventListener('submit', function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  const data = new FormData();
+    const data = new FormData();
 
-  data.append('entry.1996784540', document.getElementById('nome').value);
-  data.append('entry.1577197277', document.getElementById('instagram').value);
-  data.append('entry.561781081', document.getElementById('cpf').value);
-  data.append('entry.1891232097', document.getElementById('telefone').value);
+    data.append('entry.1996784540', document.getElementById('nome').value);
+    data.append('entry.1577197277', document.getElementById('instagram').value);
+    data.append('entry.561781081', document.getElementById('cpf').value);
+    data.append('entry.1891232097', document.getElementById('telefone').value);
 
-  fetch('https://docs.google.com/forms/d/e/1FAIpQLSd6bNaLUk8-UNMB_NJ4wcvQk2mOzVBuCRHrH-0WefXHEghtWg/formResponse', {
-    method: 'POST',
-    body: data,
-    mode: 'no-cors'
-  });
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSd6bNaLUk8-UNMB_NJ4wcvQk2mOzVBuCRHrH-0WefXHEghtWg/formResponse', {
+        method: 'POST',
+        body: data,
+        mode: 'no-cors'
+    });
 
-  alert('Cadastro enviado com sucesso!');
+    alert('Cadastro enviado com sucesso!');
+});
+
+//-----------------------VALIDAÇÃO DO FOMRULÁRIO---------------------------------
+
+//TELEFONE
+const telefoneInput = document.getElementById('telefone');
+
+//---NÃO ACEITA SÍMBOLOS
+telefoneInput.addEventListener('keydown', (e) => {
+    const allowedKeys = [
+        'Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab'
+    ];
+
+    if (allowedKeys.includes(e.key)) return;
+
+    if (!/\d/.test(e.key)) {
+        e.preventDefault();
+    }
+});
+
+//---COLOCA MÁSCARA: (XX) XXXXX-XXXX
+telefoneInput.addEventListener('input', () => {
+    let numbers = telefoneInput.value.replace(/\D/g, '');
+
+    if (numbers.length > 11) {
+        numbers = numbers.slice(0, 11);
+    }
+
+    let formatted = '';
+
+    if (numbers.length > 0) {
+        formatted = '(' + numbers.slice(0, 2);
+    }
+    if (numbers.length >= 3) {
+        formatted += ') ' + numbers.slice(2, 7);
+    }
+    if (numbers.length >= 8) {
+        formatted += '-' + numbers.slice(7);
+    }
+
+    telefoneInput.value = formatted;
 });
