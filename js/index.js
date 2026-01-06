@@ -90,6 +90,12 @@ document.getElementById('formCadastro').addEventListener('submit', function (e) 
 });
 
 //-----------------------VALIDAÇÃO DO FOMRULÁRIO---------------------------------
+//CPF
+const cpfInput = document.getElementById('cpf');
+
+cpfInput.addEventListener('input', () => {
+    cpfInput.value = cpfInput.value.replace(/\D/g, '');
+});
 
 //TELEFONE
 const telefoneInput = document.getElementById('telefone');
