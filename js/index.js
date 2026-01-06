@@ -76,13 +76,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-document
-    .getElementById('formCadastro')
-    .addEventListener('submit', function (e) {
+//ENVIO DO FORMULARIO PARA O GOOGLE FORMS-------------
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('formCadastro');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const data = new FormData();
+        if (!form.checkValidity()) {
+            form.reportValidity(); 
+            return;
+        }
 
+        const data = new FormData();
         data.append('entry.1996784540', document.getElementById('nome').value);
         data.append(
             'entry.1577197277',
@@ -103,8 +110,10 @@ document
             },
         );
 
-        alert('Cadastro enviado com sucesso!');
+        form.hidden = true;
+        successMessage.hidden = false;
     });
+});
 
 //-----------------------VALIDAÇÃO DO FOMRULÁRIO---------------------------------
 //CPF

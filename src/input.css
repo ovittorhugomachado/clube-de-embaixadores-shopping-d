@@ -38,3 +38,11 @@ button {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#success-simbol {
+    transform: scale(3.5);   
+}
+
+#circle-success {
+    transform: scale(3.5);
+}

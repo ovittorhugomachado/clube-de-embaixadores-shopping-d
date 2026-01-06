@@ -491,9 +491,6 @@
                                     maxlength="100"
                                     class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none"
                                 />
-                                <div
-                                    class="error-message nome-error text-red-500 text-xs mt-1 hidden"
-                                ></div>
                             </div>
                             <div>
                                 <label
@@ -505,6 +502,7 @@
                                 <div class="flex items-center">
                                     <span class="text-gray-600 mr-2">@</span>
                                     <input
+                                        required
                                         id="instagram"
                                         name="instagram"
                                         type="text"
@@ -563,6 +561,27 @@
                                 para contato@limaooulimonada.com.br
                             </p>
                         </form>
+                        <div id="successMessage" class="text-center flex flex-col items-center gap-3 bg-green-100" hidden>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="72"
+                                height="72"
+                                viewBox="0 0 72 72"
+                                fill="none"
+                                stroke="#FDC700"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide pb-6 lucide-circle-check w-18 h-18 shrink-0 mt-1"
+                            >
+                                <circle id="circle-success" cx="36" cy="36" r="30"></circle>
+                                <path d="m23 38 8 8 16-16"></path>
+                            </svg>
+                            <h2 class="text-4xl font-bold mb-2 pt-6">
+                                Cadastro realizado com sucesso!
+                            </h2>
+                            <p class="">Aqui da pra colocar uma mensagem de sucesso.....</p>
+                        </div>
                     </div>
                 </div>
                 <p class="text-sm text-gray-600 text-center mt-8">
@@ -636,7 +655,6 @@
                     </p>
                 </div>
             </div>
-        </footer>
         <script src="./js/index.js"></script>
     </body>
 </html>
