@@ -1,429 +1,642 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embaixador</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-
-</head>
-
-<body>
-    <section class="bg-blue-900 min-h-screen flex items-center justify-center pt-20 pb-20 px-4 md:px-8 relative">
-        <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
-            <div class="transform transition-all duration-1000 opacity-100 translate-x-0">
-                <h1 class="text-5xl md:text-6xl text-yellow-400">Seja um</h1>
-                <h1 class="text-5xl md:text-6xl text-white">Embaixador</h1>
-                <h1 class="text-5xl md:text-6xl text-white">do shopping D</h1>
-                <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed mt-6">Crie conteúdo, publique em collab
-                    com o
-                    Shopping D e ganhe prêmios pelo desempenho.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 mb-12">
-                    <a id="btnCadastro" href="#cadastro"
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 has-[>svg]:px-4 bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg px-8 py-6 rounded-lg transition-all hover:shadow-lg hover:scale-105">
-                        Fazer cadastro ➜
-                    </a>
-                    <a id="btnSaibaMais" href="#saibaMais"
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-transparent shadow-xs dark:bg-transparent dark:border-input dark:hover:bg-input/50 h-10 has-[>svg]:px-4 border-2 border-white text-white font-bold text-lg px-8 py-6 rounded-lg hover:bg-white hover:text-blue-900">
-                        Saiba mais
-                    </a>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white bg-opacity-90 backdrop-blur p-4 rounded-lg border-l-4 border-yellow-400">
-                        <p class="text-sm text-gray-700 mb-1">
-                            Criadores Ativos
-                        </p>
-                        <p class="text-2xl font-bold text-blue-900">
-                            500+
-                        </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Embaixador</title>
+        <link href="./src/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <section
+            class="bg-blue-900 min-h-screen flex items-center justify-center pt-20 pb-20 px-4 md:px-8 relative"
+        >
+            <div
+                class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10"
+            >
+                <div
+                    class="transform transition-all duration-1000 opacity-100 translate-x-0"
+                >
+                    <h1 class="text-5xl md:text-6xl text-yellow-400">
+                        Seja um
+                    </h1>
+                    <h1 class="text-5xl md:text-6xl text-white">Embaixador</h1>
+                    <h1 class="text-5xl md:text-6xl text-white">
+                        do shopping D
+                    </h1>
+                    <p
+                        class="text-xl md:text-2xl text-white mb-8 leading-relaxed mt-6"
+                    >
+                        Crie conteúdo, publique em collab com o Shopping D e
+                        ganhe prêmios pelo desempenho.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a
+                            id="btnCadastro"
+                            href="#cadastro"
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 has-[>svg]:px-4 bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg px-8 py-6 rounded-lg transition-all hover:shadow-lg hover:scale-105"
+                        >
+                            Fazer cadastro ➜
+                        </a>
+                        <a
+                            id="btnSaibaMais"
+                            href="#saibaMais"
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-transparent shadow-xs dark:bg-transparent dark:border-input dark:hover:bg-input/50 h-10 has-[>svg]:px-4 border-2 border-white text-white font-bold text-lg px-8 py-6 rounded-lg hover:bg-white hover:text-blue-900"
+                        >
+                            Saiba mais
+                        </a>
                     </div>
-                    <div class="bg-white bg-opacity-90 backdrop-blur p-4 rounded-lg border-l-4 border-yellow-400">
-                        <p class="text-sm text-gray-700 mb-1">
-                            Prêmios Distribuídos
-                        </p>
-                        <p class="text-2xl font-bold text-blue-900">
-                            R$ 50k+
-                        </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="bg-white bg-opacity-90 backdrop-blur p-4 rounded-lg border-l-4 border-yellow-400"
+                        >
+                            <p class="text-sm text-gray-700 mb-1">
+                                Criadores Ativos
+                            </p>
+                            <p class="text-2xl font-bold text-blue-900">500+</p>
+                        </div>
+                        <div
+                            class="bg-white bg-opacity-90 backdrop-blur p-4 rounded-lg border-l-4 border-yellow-400"
+                        >
+                            <p class="text-sm text-gray-700 mb-1">
+                                Prêmios Distribuídos
+                            </p>
+                            <p class="text-2xl font-bold text-blue-900">
+                                R$ 50k+
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="transform transition-all duration-1000 delay-300 opacity-100 translate-x-0">
-                <div class="relative flex justify-center">
-                    <div
-                        class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-3xl blur-3xl opacity-20 -z-10">
+                <div
+                    class="transform transition-all duration-1000 delay-300 opacity-100 translate-x-0"
+                >
+                    <div class="relative flex justify-center">
+                        <div
+                            class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-3xl blur-3xl opacity-20 -z-10"
+                        ></div>
+                        <img
+                            src="./images/casal.png"
+                            alt=""
+                            class="max-w-full h-auto drop-shadow-2xl"
+                        />
                     </div>
-                    <img src="./images/casal.png" alt="" class="max-w-full h-auto drop-shadow-2xl">
                 </div>
-            </div>
-        </div>
-        <div class="absolute bottom-0 h-1 w-full bg-linear-to-r from-transparent via-yellow-400 to-transparent"></div>
-    </section>
-    <section id="saibaMais" class="flex justify-center py-20 px-4 md:px-8 bg-linear-to-b from-white to-blue-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-4xl md:text-5xl font-bold mb-4">
-                <h2 class="text-[#0F172A] mb-8 text-center">
-                    O que é o <span class="text-yellow-400">Clube de Embaixadores?</span>
-                </h2>
-                <p class="text-xl font-light text-center text-gray-700 max-w-3xl mx-auto">
-                    O Clube de Embaixadores do Shopping D conecta criadores de conteúdo ao shopping por meio de
-                    conteúdos autorais e criativos.</p>
             </div>
             <div
-                class="bg-white bg-opacity-90 backdrop-blur rounded-2xl p-8 md:p-12 border-l-4 border-yellow-400 shadow-lg">
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    Você cria um conteúdo sobre o Shopping D e, se
-                    ele for aprovado, pode ser publicado em collab com o perfil oficial do Shopping D, ampliando seu
-                    alcance e visibilidade.
-                </p>
-                <div class="flex items-center gap-4 text-yellow-600 font-semibold">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-circle-check w-6 h-6 shrink-0 mt-1">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="m9 12 2 2 4-4"></path>
-                    </svg>
-                    <p class="translate-y-1">Aumente seu alcance com a força da marca Shopping D</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="comoFunciona" class="py-20 px-4 md:px-8">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-[#0F172A] text-4xl md:text-5xl font-bold text-center mb-16">
-                Como
-                <span class="text-yellow-400">
-                    Funciona
-                </span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="relative group">
-                    <div
-                        class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300">
-                    </div>
-                    <div class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col">
-                        <div
-                            class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                            1</div>
-                        <h3 class="font-bold text-lg mb-3 text-blue-900">Crie um Conteúdo Original</h3>
-                        <p class="text-gray-700 text-sm grow">Vídeo ou carrossel sobre o Shopping D, a
-                            experiência, lojas ou eventos.</p>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <div
-                        class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300">
-                    </div>
-                    <div class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col">
-                        <div
-                            class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                            2
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-blue-900">
-                            Envie para Avaliação
-                        </h3>
-                        <p class="text-gray-700 text-sm grow">
-                            O Shopping D analisa se o conteúdo está
-                            alinhado com a marca.
-                        </p>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <div
-                        class="absolute inset-0 g-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300">
-                    </div>
-                    <div class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col">
-                        <div
-                            class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                            3
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-blue-900">
-                            Publicação em Collab
-                        </h3>
-                        <p class="text-gray-700 text-sm grow">
-                            Se aprovado, é publicado em collab com o Shopping D.
-                        </p>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <div
-                        class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300">
-                    </div>
-                    <div class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col">
-                        <div
-                            class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                            4
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-blue-900">
-                            Contagem de Views
-                        </h3>
-                        <p class="text-gray-700 text-sm grow">
-                            As visualizações são contabilizadas após a publicação.
-                        </p>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <div
-                        class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300">
-                    </div>
-                    <div class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col">
-                        <div
-                            class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4">
-                            5
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-blue-900">
-                            Premiação
-                        </h3>
-                        <p class="text-gray-700 text-sm grow">
-                            Ganhe prêmios baseado no desempenho do conteúdo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-20 px-4 md:px-8 bg-linear-to-b from-blue-50 to-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-[#0F172A] text-4xl md:text-5xl font-bold text-center mb-16">
-                Quem pode <span class="text-yellow-400">Participar?</span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="flex gap-4 items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-users w-8 h-8 text-yellow-400 shrink-0 mt-1">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2 text-blue-900">
-                            Criadores de Conteúdo
-                        </h3>
-                        <p class="text-gray-700">
-                            Influenciadores e criadores que querem expandir seu alcance.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex gap-4 items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-zap w-8 h-8 text-yellow-400 shrink-0 mt-1">
-                        <path
-                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
-                        </path>
-                    </svg>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2 text-blue-900">
-                            Pessoas Autênticas
-                        </h3>
-                        <p class="text-gray-700">
-                            Pessoas que gostam de compartilhar experiências reais.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex gap-4 items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-circle-check w-8 h-8 text-yellow-400 shrink-0 mt-1">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="m9 12 2 2 4-4"></path>
-                    </svg>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2 text-blue-900">
-                            Perfis Ativos
-                        </h3>
-                        <p class="text-gray-700">
-                            Perfis reais e com conteúdo autoral consistente.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex gap-4 items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-zap w-8 h-8 text-yellow-400 shrink-0 mt-1">
-                        <path
-                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5. 5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
-                        </path>
-                    </svg>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2 text-blue-900">
-                            Criatividade Conta Mais
-                        </h3>
-                        <p class="text-gray-700">
-                            Não precisa ter muitos seguidores. Criatividade e autenticidade contam mais.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="regras" class="py-20 px-4 md:px-8">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-[#0F172A] text-4xl md:text-5xl font-bold text-center mb-16">
-                Regras <span class="text-yellow-400">Importantes</span>
-            </h2>
-            <div class="bg-linear-to-br from-blue-900 to-blue-800 rounded-2xl p-8 md:p-12 text-white">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="flex gap-4">
-                        <div class="w-1 bg-yellow-400 shrink-0"></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2">100% Autoral</h3>
-                            <p class="text-blue-100">O conteúdo deve ser totalmente autoral.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-1 bg-yellow-400 shrink-0"></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2">Responsabilidade do Criador</h3>
-                            <p class="text-blue-100">
-                                Direitos de imagem e autorizações são sua responsabilidade.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-1 bg-yellow-400 shrink-0"></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2">Isenção do Shopping D</h3>
-                            <p class="text-blue-100">
-                                O Shopping D não se responsabiliza pelo conteúdo ou opiniões.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-1 bg-yellow-400 shrink-0"></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-2">Aprovação Discricionária</h3>
-                            <p class="text-blue-100">
-                                O Shopping D pode aprovar ou recusar conteúdos enviados.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="cadastro" class="py-20 px-4 md:px-8 bg-linear-to-b from-white to-blue-50">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-[#0F172A] text-4xl md:text-5xl font-bold mb-4">
-                    Quer ser um <span class="text-yellow-400">Embaixador</span><br> do Shopping D?
-                </h2>
-                <p class="text-xl text-gray-700">
-                    Preencha o formulário abaixo e comece sua jornada como criador de conteúdo!
-                </p>
-            </div>
-            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border-t-4 border-yellow-400">
-                <div class="w-full max-w-2xl mx-auto">
-                    <form id="formCadastro" class="space-y-6">
-                        <div>
-                            <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">
-                                Nome Completo *
-                            </label>
-                            <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required
-                                minlength="3" maxlength="100"
-                                class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none" />
-                            <div class="error-message nome-error text-red-500 text-xs mt-1 hidden"></div>
-                        </div>
-                        <div>
-                            <label for="instagram" class="block text-sm font-semibold text-gray-700 mb-2">
-                                Perfil do Instagram *
-                            </label>
-                            <div class="flex items-center">
-                                <span class="text-gray-600 mr-2">@</span>
-                                <input id="instagram" name="instagram" type="text" placeholder="seu_usuario"
-                                    class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none" />
-                            </div>
-                        </div>
-                        <div>
-                            <label for="cpf" class="block text-sm font-semibold text-gray-700 mb-2">
-                                CPF do Responsável *
-                            </label>
-                            <input id="cpf" name="cpf" type="text" required maxlength="11" minlength="11"
-                                inputmode="numeric" pattern="\d{11}" placeholder="000.000.000-00"
-                                class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none" />
-                        </div>
-                        <div>
-                            <label for="telefone" class="block text-sm font-semibold text-gray-700 mb-2" type="tel"
-                                inputmode="numeric" pattern="[0-9]*" required>
-                                Telefone de Contato *
-                            </label>
-                            <input id="telefone" name="telefone" type="text" required inputmode="numeric"
-                                autocomplete="tel" placeholder="(00) 00000-0000" pattern="\(\d{2}\)\s\d{5}-\d{4}" title="Digite o telefone no formato (99) 99999-9999"
-                                class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none" />
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg py-1 rounded-lg transition-all hover:shadow-lg">
-                            Enviar Cadastro
-                        </button>
-                        <p class="text-xs text-gray-600 text-center">
-                            * Campos obrigatórios. Seus dados serão enviados para contato@limaooulimonada.com.br
-                        </p>
-                    </form>
-                </div>
-            </div>
-            <p class="text-sm text-gray-600 text-center mt-8">
-                Dúvidas? Entre em contato conosco através do Instagram @shoppingd
-            </p>
-        </div>
-    </section>
-    <footer class="bg-blue-900 text-white py-12 px-4 md:px-8">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-yellow-400">
-                        Clube de Embaixadores
-                    </h3>
-                    <p class="text-blue-100">
-                        Conectando criadores ao Shopping D através de conteúdo autoral.
+                class="absolute bottom-0 h-1 w-full bg-linear-to-r from-transparent via-yellow-400 to-transparent"
+            ></div>
+        </section>
+        <section
+            id="saibaMais"
+            class="flex justify-center py-20 px-4 md:px-8 bg-linear-to-b from-white to-blue-50"
+        >
+            <div class="max-w-6xl mx-auto">
+                <div class="text-4xl md:text-5xl font-bold mb-4">
+                    <h2 class="text-[#0F172A] mb-8 text-center">
+                        O que é o
+                        <span class="text-yellow-400"
+                            >Clube de Embaixadores?</span
+                        >
+                    </h2>
+                    <p
+                        class="text-xl font-light text-center text-gray-700 max-w-3xl mx-auto"
+                    >
+                        O Clube de Embaixadores do Shopping D conecta criadores
+                        de conteúdo ao shopping por meio de conteúdos autorais e
+                        criativos.
                     </p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-yellow-400">
-                        Links Rápidos
-                    </h3>
-                    <ul class="space-y-2 text-blue-100">
-                        <li>
-                            <a id="btnComoFunciona" href="#comoFunciona" class="hover:text-yellow-400 transition">
-                                Como Funciona
-                            </a>
-                        </li>
-                        <li>
-                            <a id="btnRegras" href="#regras" class="hover:text-yellow-400 transition">
-                                Regras
-                            </a>
-                        </li>
-                        <li>
-                            <a id="btnContato" href="#cadastro" class="hover:text-yellow-400 transition">
-                                Contato
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-yellow-400">
-                        Siga-nos
-                    </h3>
-                    <a href="https://www.instagram.com/shopping_d/" target="_blank"
-                        class="text-blue-100 hover:text-yellow-400 transition">@shoppingd</a>
+                <div
+                    class="bg-white bg-opacity-90 backdrop-blur rounded-2xl p-8 md:p-12 border-l-4 border-yellow-400 shadow-lg"
+                >
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Você cria um conteúdo sobre o Shopping D e, se ele for
+                        aprovado, pode ser publicado em collab com o perfil
+                        oficial do Shopping D, ampliando seu alcance e
+                        visibilidade.
+                    </p>
+                    <div
+                        class="flex items-center gap-4 text-yellow-600 font-semibold"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-circle-check w-6 h-6 shrink-0 mt-1"
+                        >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <p class="translate-y-1">
+                            Aumente seu alcance com a força da marca Shopping D
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-blue-800 pt-8">
-                <p class="text-center text-blue-100 text-sm">
-                    © 2024 Shopping D. Todos os direitos reservados.
+        </section>
+        <section id="comoFunciona" class="py-20 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-[#0F172A] text-4xl md:text-5xl font-bold text-center mb-16"
+                >
+                    Como
+                    <span class="text-yellow-400">Funciona</span>
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
+                >
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300"
+                        ></div>
+                        <div
+                            class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col"
+                        >
+                            <div
+                                class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4"
+                            >
+                                1
+                            </div>
+                            <h3 class="font-bold text-lg mb-3 text-blue-900">
+                                Crie um Conteúdo Original
+                            </h3>
+                            <p class="text-gray-700 text-sm grow">
+                                Vídeo ou carrossel sobre o Shopping D, a
+                                experiência, lojas ou eventos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300"
+                        ></div>
+                        <div
+                            class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col"
+                        >
+                            <div
+                                class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4"
+                            >
+                                2
+                            </div>
+                            <h3 class="font-bold text-lg mb-3 text-blue-900">
+                                Envie para Avaliação
+                            </h3>
+                            <p class="text-gray-700 text-sm grow">
+                                O Shopping D analisa se o conteúdo está alinhado
+                                com a marca.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 g-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300"
+                        ></div>
+                        <div
+                            class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col"
+                        >
+                            <div
+                                class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4"
+                            >
+                                3
+                            </div>
+                            <h3 class="font-bold text-lg mb-3 text-blue-900">
+                                Publicação em Collab
+                            </h3>
+                            <p class="text-gray-700 text-sm grow">
+                                Se aprovado, é publicado em collab com o
+                                Shopping D.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300"
+                        ></div>
+                        <div
+                            class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col"
+                        >
+                            <div
+                                class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4"
+                            >
+                                4
+                            </div>
+                            <h3 class="font-bold text-lg mb-3 text-blue-900">
+                                Contagem de Views
+                            </h3>
+                            <p class="text-gray-700 text-sm grow">
+                                As visualizações são contabilizadas após a
+                                publicação.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 bg-linear-to-br from-yellow-400 to-orange-400 rounded-xl blur opacity-0 group-hover:opacity-20 transition duration-300"
+                        ></div>
+                        <div
+                            class="relative bg-white rounded-xl p-6 border-2 border-yellow-400 h-full flex flex-col"
+                        >
+                            <div
+                                class="w-12 h-12 bg-yellow-400 text-blue-900 rounded-full flex items-center justify-center font-bold text-xl mb-4"
+                            >
+                                5
+                            </div>
+                            <h3 class="font-bold text-lg mb-3 text-blue-900">
+                                Premiação
+                            </h3>
+                            <p class="text-gray-700 text-sm grow">
+                                Ganhe prêmios baseado no desempenho do conteúdo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="py-20 px-4 md:px-8 bg-linear-to-b from-blue-50 to-white"
+        >
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-[#0F172A] text-4xl md:text-5xl font-bold text-center mb-16"
+                >
+                    Quem pode
+                    <span class="text-yellow-400">Participar?</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex gap-4 items-start">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-users w-8 h-8 text-yellow-400 shrink-0 mt-1"
+                        >
+                            <path
+                                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                            ></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-blue-900">
+                                Criadores de Conteúdo
+                            </h3>
+                            <p class="text-gray-700">
+                                Influenciadores e criadores que querem expandir
+                                seu alcance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-zap w-8 h-8 text-yellow-400 shrink-0 mt-1"
+                        >
+                            <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                            ></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-blue-900">
+                                Pessoas Autênticas
+                            </h3>
+                            <p class="text-gray-700">
+                                Pessoas que gostam de compartilhar experiências
+                                reais.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-circle-check w-8 h-8 text-yellow-400 shrink-0 mt-1"
+                        >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-blue-900">
+                                Perfis Ativos
+                            </h3>
+                            <p class="text-gray-700">
+                                Perfis reais e com conteúdo autoral consistente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-zap w-8 h-8 text-yellow-400 shrink-0 mt-1"
+                        >
+                            <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5. 5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                            ></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2 text-blue-900">
+                                Criatividade Conta Mais
+                            </h3>
+                            <p class="text-gray-700">
+                                Não precisa ter muitos seguidores. Criatividade
+                                e autenticidade contam mais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="regras" class="py-20 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-[#0F172A] text-4xl md:text-5xl font-bold text-center mb-16"
+                >
+                    Regras
+                    <span class="text-yellow-400">Importantes</span>
+                </h2>
+                <div
+                    class="bg-linear-to-br from-blue-900 to-blue-800 rounded-2xl p-8 md:p-12 text-white"
+                >
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex gap-4">
+                            <div class="w-1 bg-yellow-400 shrink-0"></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">
+                                    100% Autoral
+                                </h3>
+                                <p class="text-blue-100">
+                                    O conteúdo deve ser totalmente autoral.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-1 bg-yellow-400 shrink-0"></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">
+                                    Responsabilidade do Criador
+                                </h3>
+                                <p class="text-blue-100">
+                                    Direitos de imagem e autorizações são sua
+                                    responsabilidade.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-1 bg-yellow-400 shrink-0"></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">
+                                    Isenção do Shopping D
+                                </h3>
+                                <p class="text-blue-100">
+                                    O Shopping D não se responsabiliza pelo
+                                    conteúdo ou opiniões.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-1 bg-yellow-400 shrink-0"></div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">
+                                    Aprovação Discricionária
+                                </h3>
+                                <p class="text-blue-100">
+                                    O Shopping D pode aprovar ou recusar
+                                    conteúdos enviados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            id="cadastro"
+            class="py-20 px-4 md:px-8 bg-linear-to-b from-white to-blue-50"
+        >
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-[#0F172A] text-4xl md:text-5xl font-bold mb-4"
+                    >
+                        Quer ser um
+                        <span class="text-yellow-400">Embaixador</span>
+                        <br />
+                        do Shopping D?
+                    </h2>
+                    <p class="text-xl text-gray-700">
+                        Preencha o formulário abaixo e comece sua jornada como
+                        criador de conteúdo!
+                    </p>
+                </div>
+                <div
+                    class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border-t-4 border-yellow-400"
+                >
+                    <div class="w-full max-w-2xl mx-auto">
+                        <form id="formCadastro" class="space-y-6">
+                            <div>
+                                <label
+                                    for="nome"
+                                    class="block text-sm font-semibold text-gray-700 mb-2"
+                                >
+                                    Nome Completo *
+                                </label>
+                                <input
+                                    id="nome"
+                                    name="nome"
+                                    type="text"
+                                    placeholder="Seu nome completo"
+                                    required
+                                    minlength="2"
+                                    maxlength="100"
+                                    class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none"
+                                />
+                                <div
+                                    class="error-message nome-error text-red-500 text-xs mt-1 hidden"
+                                ></div>
+                            </div>
+                            <div>
+                                <label
+                                    for="instagram"
+                                    class="block text-sm font-semibold text-gray-700 mb-2"
+                                >
+                                    Perfil do Instagram *
+                                </label>
+                                <div class="flex items-center">
+                                    <span class="text-gray-600 mr-2">@</span>
+                                    <input
+                                        id="instagram"
+                                        name="instagram"
+                                        type="text"
+                                        placeholder="seu_usuario"
+                                        class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label
+                                    for="cpf"
+                                    class="block text-sm font-semibold text-gray-700 mb-2"
+                                >
+                                    CPF do Responsável *
+                                </label>
+                                <input
+                                    id="cpf"
+                                    name="cpf"
+                                    type="text"
+                                    required
+                                    inputmode="numeric"
+                                    placeholder="000.000.000-00"
+                                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                                    title="XXX.XXX.XXX-XX"
+                                    class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    for="telefone"
+                                    class="block text-sm font-semibold text-gray-700 mb-2"
+                                >
+                                    Telefone de Contato *
+                                </label>
+                                <input
+                                    id="telefone"
+                                    name="telefone"
+                                    type="text"
+                                    required
+                                    inputmode="numeric"
+                                    autocomplete="tel"
+                                    placeholder="(00) 00000-0000"
+                                    pattern="\(\d{2}\)\s\d{5}-\d{4}"
+                                    title="(99) 99999-9999"
+                                    class="w-full px-4 py-1 border-2 border-gray-300 rounded-lg focus:border-yellow-400 focus:outline-none"
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold text-lg py-1 rounded-lg transition-all hover:shadow-lg"
+                            >
+                                Enviar Cadastro
+                            </button>
+                            <p class="text-xs text-gray-600 text-center">
+                                * Campos obrigatórios. Seus dados serão enviados
+                                para contato@limaooulimonada.com.br
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 text-center mt-8">
+                    Dúvidas? Entre em contato conosco através do Instagram
+                    @shoppingd
                 </p>
             </div>
-        </div>
-    </footer>
-    <script src="./js/index.js"></script>
-</body>
-
+        </section>
+        <footer class="bg-blue-900 text-white py-12 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-yellow-400">
+                            Clube de Embaixadores
+                        </h3>
+                        <p class="text-blue-100">
+                            Conectando criadores ao Shopping D através de
+                            conteúdo autoral.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-yellow-400">
+                            Links Rápidos
+                        </h3>
+                        <ul class="space-y-2 text-blue-100">
+                            <li>
+                                <a
+                                    id="btnComoFunciona"
+                                    href="#comoFunciona"
+                                    class="hover:text-yellow-400 transition"
+                                >
+                                    Como Funciona
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    id="btnRegras"
+                                    href="#regras"
+                                    class="hover:text-yellow-400 transition"
+                                >
+                                    Regras
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    id="btnContato"
+                                    href="#cadastro"
+                                    class="hover:text-yellow-400 transition"
+                                >
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-yellow-400">
+                            Siga-nos
+                        </h3>
+                        <a
+                            href="https://www.instagram.com/shopping_d/"
+                            target="_blank"
+                            class="text-blue-100 hover:text-yellow-400 transition"
+                        >
+                            @shoppingd
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-blue-800 pt-8">
+                    <p class="text-center text-blue-100 text-sm">
+                        © 2024 Shopping D. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
