@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 html {
     background-image: url('../images/texturafundo.png');
@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a[href^="#"] {
+a[href^='#'] {
     scroll-behavior: smooth;
 }
 
@@ -23,12 +23,12 @@ h1 {
 }
 
 p {
-    font-family: "inter";
+    font-family: 'inter';
 }
 
 button {
     cursor: pointer;
-    font-family: "inter";
+    font-family: 'inter';
     font-weight: 500;
 }
 
@@ -39,8 +39,19 @@ button {
     background-repeat: no-repeat;
 }
 
+.release-text {
+    font-weight: 800;
+}
+
+.div-orange {
+    width: 250px;
+    padding: 10px 25px;
+    background-color: #fe690d;
+
+}
+
 #success-simbol {
-    transform: scale(3.5);   
+    transform: scale(3.5);
 }
 
 #circle-success {
