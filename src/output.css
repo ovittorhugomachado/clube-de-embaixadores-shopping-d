@@ -1487,6 +1487,11 @@ button {
     transform: scale(3.5);
 }
 
+.span-step {
+    color: #5a5a5a;
+    font-weight: 400;
+}
+
 .item-step-list {
     border-bottom: 1px solid #fdc700;
     margin-bottom: 20px;
@@ -1559,4 +1564,24 @@ button {
     .image-hero {
         transform: translateY(-50px);
     }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* gap-6 */
+}
+
+/* md ≥ 768px */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* lg ≥ 1024px */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
