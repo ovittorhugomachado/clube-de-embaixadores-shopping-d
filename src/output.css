@@ -1475,7 +1475,7 @@ button {
 
 .div-orange {
     width: 250px;
-    padding: 10px 155px;
+    padding: 10px 135px;
     background-color: #fe690d;
 }
 
@@ -1485,6 +1485,11 @@ button {
 
 #circle-success {
     transform: scale(3.5);
+}
+
+.span-step {
+    color: #5a5a5a;
+    font-weight: 400;
 }
 
 .item-step-list {
@@ -1554,9 +1559,101 @@ button {
     }
 }
 
-
 @media (min-width: 1042px) {
     .image-hero {
         transform: translateY(-50px);
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* gap-6 */
+}
+
+.text-orange {
+    color: white;
+    background-color: rgb(255, 91, 31);
+    border-radius: 80px;
+    display: inline-block;
+    padding: 5px 20px;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.text-awards {
+    font-size: 35px;
+    color: #fdc700;
+    font-weight: 800;
+    transform: translateY(10px);
+}
+
+.span-border {
+    margin: auto;
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: #fdc700;
+    transform: translateY(10px);
+}
+
+.last-view-awards {
+    color: white;
+    font-weight: 200;
+    line-height: 15px;
+    transform: translateY(10px);
+    transform: translateY(-5px);
+}
+.value-awards {
+    font-size: 36px;
+    margin-right: 5px;
+}
+
+.span-value-awards {
+    font-size: 15px;
+}
+
+.view-awards {
+    text-align: start;
+    color: white;
+    font-weight: 200;
+    line-height: 15px;
+    transform: translateY(10px);
+}
+
+.value-awards {
+    color: white;
+}
+
+.span-text-orange {
+    background-color: rgb(255, 91, 31);
+    width: 400px;
+    height: 2px;
+    transform: translateY(-17px);
+    display: block;
+    z-index: 0;
+}
+
+/* md ≥ 768px */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .span-border {
+        width: 2px;
+        height: 100px;
+        background-color: #fdc700;
+        transform: translateY(10px);
+    }
+
+    .premios {
+        flex-direction: row;
+    }
+}
+
+/* lg ≥ 1024px */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

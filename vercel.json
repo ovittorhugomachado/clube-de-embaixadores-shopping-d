@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://clube-de-embaixadores-shopping-d-84.vercel.app",
+      "permanent": false
+    }
+  ]
+}
