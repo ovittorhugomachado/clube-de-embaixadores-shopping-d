@@ -1474,9 +1474,70 @@ button {
 }
 
 .div-orange {
-    width: 250px;
-    padding: 10px 135px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 310px);
+    height: 78px;
+    gap: 7px;
     background-color: #fe690d;
+    border-radius: 0 0 28px 28px;
+    color: #ffffff;
+    line-height: 0.86;
+}
+
+.award-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.award-small {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.award-currency {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 0.86;
+}
+
+.award-value {
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 0.76;
+}
+
+.award-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 0.86;
+}
+
+@media (max-width: 420px) {
+    .div-orange {
+        width: min(100%, 300px);
+        height: 76px;
+        padding: 0 20px;
+        gap: 6px;
+    }
+
+    .award-small {
+        font-size: 16px;
+    }
+
+    .award-currency {
+        font-size: 36px;
+    }
+
+    .award-right {
+        font-size: 29px;
+    }
 }
 
 #success-simbol {
