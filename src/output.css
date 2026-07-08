@@ -920,7 +920,7 @@
     .hover\: {
         &:hover {
             @media (hover: hover) {
-                color: var(--color-blue-900);
+                color: var(--color-green-900);
             }
         }
     }
