@@ -1700,7 +1700,7 @@ button {
 }
 
 /* md ≥ 768px */
-@media (min-width: 768px) {
+@media (min-width: 898px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
