@@ -749,7 +749,7 @@
     .text-blue-100 {
         color: var(--color-blue-100);
     }
-    .text-blue-900 {
+    . {
         color: var(--color-blue-900);
     }
     .text-gray-600 {
@@ -917,7 +917,7 @@
             }
         }
     }
-    .hover\:text-blue-900 {
+    .hover\: {
         &:hover {
             @media (hover: hover) {
                 color: var(--color-blue-900);
