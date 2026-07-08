@@ -1519,24 +1519,28 @@ button {
     line-height: 0.86;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
     .div-orange {
-        width: min(100%, 300px);
-        height: 76px;
-        padding: 0 20px;
-        gap: 6px;
+        width: min(100%, 288px) !important;
+        height: 62px !important;
+        padding: 0 16px !important;
+        gap: 4px !important;
     }
 
     .award-small {
-        font-size: 16px;
+        font-size: 12px !important;
     }
 
     .award-currency {
-        font-size: 36px;
+        font-size: 27px !important;
+    }
+
+    .award-value {
+        font-size: 64px !important;
     }
 
     .award-right {
-        font-size: 29px;
+        font-size: 23px !important;
     }
 }
 
