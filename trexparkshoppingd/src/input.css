@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 html {
-    background-image: url('../images/texturafundo.png');
+    background-image: url('../images/fundo-trex.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ button {
 }
 
 .section-hero {
-    background-image: url('/images/texturafundo.png');
+    background-image: url('../images/fundo-trex.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
