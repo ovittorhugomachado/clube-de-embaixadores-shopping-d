@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+
+html {
+    background-image: url('../images/texturafundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#cadastro {
+    scroll-behavior: smooth;
+}
+
+a[href^='#'] {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: poppins;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+p {
+    font-family: 'inter';
+}
+
+button {
+    cursor: pointer;
+    font-family: 'inter';
+    font-weight: 500;
+}
+
+.section-hero {
+    background-image: url('/images/texturafundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.release-text {
+    font-weight: 800;
+}
+
+.div-orange {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 310px);
+    height: 78px;
+    padding: 0 24px;
+    gap: 7px;
+    background-color: #fe690d;
+    border-radius:28px;
+    color: #ffffff;
+    line-height: 0.86;
+}
+
+.award-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.award-small {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.award-currency {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 0.86;
+}
+
+.award-value {
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 0.76;
+}
+
+.award-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 0.86;
+}
+
+@media (max-width: 450px) {
+    .div-orange {
+        width: min(100%, 288px) !important;
+        height: 62px !important;
+        padding: 0 16px !important;
+        gap: 4px !important;
+    }
+
+    .award-small {
+        font-size: 12px !important;
+    }
+
+    .award-currency {
+        font-size: 27px !important;
+    }
+
+    .award-value {
+        font-size: 64px !important;
+    }
+
+    .award-right {
+        font-size: 23px !important;
+    }
+}
+
+#success-simbol {
+    transform: scale(3.5);
+}
+
+#circle-success {
+    transform: scale(3.5);
+}
