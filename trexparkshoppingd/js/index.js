@@ -90,19 +90,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const data = new FormData();
-        data.append('entry.1996784540', document.getElementById('nome').value);
+        data.append('entry.1844215954', document.getElementById('nome').value);
         data.append(
-            'entry.1577197277',
+            'entry.35914084',
             document.getElementById('instagram').value,
         );
-        data.append('entry.561781081', document.getElementById('cpf').value);
+        data.append('entry.1584390635', document.getElementById('cpf').value);
         data.append(
-            'entry.1891232097',
+            'entry.1294276980',
             document.getElementById('telefone').value,
         );
 
         fetch(
-            'https://docs.google.com/forms/d/e/1FAIpQLSd6bNaLUk8-UNMB_NJ4wcvQk2mOzVBuCRHrH-0WefXHEghtWg/formResponse',
+            'https://docs.google.com/forms/d/e/1FAIpQLSeuZLpQdHd8bjvlil_WXnzfbXabcnHXjoLiCT9x5id_F-A1qg/formResponse',
             {
                 method: 'POST',
                 body: data,
